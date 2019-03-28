@@ -1,0 +1,25 @@
+//https://github.com/junit-team/junit5-samples/tree/r5.4.1/junit5-jupiter-starter-gradle
+//http://www.ne.jp/asahi/hishidama/home/tech/java/junit/5/gradle.html
+
+plugins {
+    id 'java'
+    id 'idea'
+}
+
+group 'yakisuzu'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.4.1'
+}
+
+test {
+    useJUnitPlatform()
+}
